@@ -1,0 +1,3 @@
+sut:
+  image: qwe
+  command: npm test

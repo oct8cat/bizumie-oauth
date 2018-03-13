@@ -7,13 +7,14 @@
     "dev": "nodemon bin/start.js",
     "test": "NODE_ENV=test mocha --no-colors",
     "lint": "standard",
-    "fix": "prettier --no-semi --single-quote --arrow-parens=always --write './**/*.js'"
+    "fix":
+      "prettier --no-semi --single-quote --arrow-parens=always --write './**/*.js'"
   },
   "keywords": [],
   "author": "Sergey Elsukov <oct8cat@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bizumie-common": "^1.0.1",
+    "bizumie-common": "^1.0.3",
     "express": "^4.16.2",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"

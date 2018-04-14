@@ -1,16 +1,14 @@
 FROM node:8
 
-ENV APP_HOME /opt/bizumie-oauth
-ENV NPM_CONFIG_LOGLEVEL warn
-ENV PORT 80
+ENV DB_URI mongodb://mongo/bizumie
+ENV URL http://localhost:3001
 
-WORKDIR $APP_HOME
-
+WORKDIR /opt/bizumie-oauth
 COPY package.json package-lock.json ./
 RUN npm install
 
 COPY . .
 
-EXPOSE $PORT
+EXPOSE 80
 
 CMD npm start

@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node bin/start.js",
-    "dev": "PORT=3000 nodemon bin/start.js",
+    "dev": "PORT=3001 nodemon bin/start.js",
     "test": "NODE_ENV=test mocha --no-colors",
     "docker-test": "docker-compose -f docker-compose.test.yml run sut",
     "lint": "standard",
